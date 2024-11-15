@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/399b183bf3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Student in CMRIT</p>
+            <h1>Hi,I'm <span>Pooja</span> Madishetti</h1>
+        </div>
+    </div>
+</div>
+<div id="About">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="C:\Users\Pooja Madishetti\OneDrive\Desktop\portfolio\images\user1.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Looking for an opportunity to apply my expertise in the field of computers, and make effective 
+                    use of my technical skills to get the best out of myself as a Software engineer.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>C,C++,Python,Java</li>
+                            <li><span>Web Technologies</span><br>HTML,CSS</li>
+                            <li><span>Database</span><br>Mysql,DBMS</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-Current</span><br>B.tech from CMR Institute Of Technology</li>
+                            <li><span>2018-2020</span><br>MPC from Narayana Junior College</li>
+                            <li><span>2017-2018</span><br>SSC from Krishnaveni High School</li>
+                        </ul>
+                    </div>
+            </div>
+        </div> 
+    </div>
+</div>
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>I specialize in crafting modern and responsive designs that seamlessly adapt to various devices. My skills include proficiency in HTML, CSS, and JavaScript, enabling me to bring creative concepts to life. </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Arificial Intelligence</h2>
+                <p>I showcase my proficiency in developing intelligent systems and leveraging machine learning techniques to solve complex problems. </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-aws"></i>
+                <h2>Cloud Computing</h2>
+                <p>I showcase my proficiency in leveraging cloud technologies to enhance business operations and scalability. I have hands-on experience with leading cloud platforms such as AWS, Azure, and Google Cloud, demonstrating my ability to design and implement robust cloud-based solutions.</p>
+                <a href="#">Learn more</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="C:\Users\Pooja Madishetti\OneDrive\Desktop\portfolio\images\Picture1.png">
+                <div class="layer">
+                    <h3>Prediction of Engineering College Selection for Students</h3>
+                    <p>Developed a predictive model to assist students in selecting the engineering colleges based on their 
+                        academic performance and preferences</p>
+                        <p>Technologies: Python, HTML, CSS, Django, SQL</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="C:\Users\Pooja Madishetti\OneDrive\Desktop\portfolio\images\maxresdefault.jpg">
+                <div class="layer">
+                    <h3>Anti-Sleep Glasses</h3>
+                    <p>Designed and developed a prototype of Anti-Sleep Glasses to enhance driver safety by detecting 
+                        signs of Drowsiness and alerting the wearer</p>
+                        <p>Technologies: Python, Arduino, IR Sensor</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#"class="btn">See more</a>
+    </div>
+</div>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="'sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>poojamadishetti2002@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>8341624338</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/pooja-madishetti-91a5a0251"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="C:\Users\Pooja Madishetti\OneDrive\Desktop\certificates\20R01A66F1_Pooja.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                    
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>2023 <i class="fa-regular fa-copyright"></i> Portfolio|All Right Reserved</p>
+
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenu= document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwZMltvvHOH7RLCSyL9mEG8yKAWi3r4GywiOYq-BdQBTpjlxfSQK3VQ-NGeM667K5wR/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent successfully"
+            setTimeout(function(){
+                msg.innerHTML= ""
+            },5000)
+            form.reset() 
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
